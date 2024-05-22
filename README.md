@@ -1,2 +1,5 @@
 # Planejamento do Projeto Agrinho
-projeto agrinho Guilherme e Vinicius
+Autores do projeto: Guilherme Gonçalves dos Santos, Vinicius Henrique Limberger.
+Instituição de Ensino: Colégio YVONE PIMENTEL, C E-EF- Curitiba-PR.
+
+
