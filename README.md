@@ -2,7 +2,7 @@
 # Autores do projeto: Guilherme Gonçalves dos Santos, Vinicius Henrique Limberger.
 # Instituição de Ensino: Colégio YVONE PIMENTEL, C E-EF- Curitiba-PR.
 
-Tema Do Projeto: Agrinho do campo a cidade, colhendo oportunidades.
+# Tema Do Projeto: Agrinho do campo a cidade, colhendo oportunidades.
 
 # Pagina inicial
 
