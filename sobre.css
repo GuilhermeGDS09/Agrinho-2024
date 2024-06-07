@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1d5b35;
+  font-family: Verdana, sans-serif;
+  color: #333;
+}
+
+.bg {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.menu {
+
+  background-color: #1d5b35;
+  width: 100%;
+  
+  text-align: center;
+}
+
+.titulo {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.menu-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button {
+  border: 1px solid #FFFF;
+  background-color: transparent;
+  height: 40px;
+  width: 160px;
+  color: #FFFF;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.informacoes h1 {
+    color: #fff;
+    position: absolute;
+   right: 760px;
+  padding: 20px 0;
+}
+* { box-sizing: border-box; }
+body { font-family: Verdana, sans-serif; margin: 0; padding: 0; }
+
+.menu {
+    background-color: #1d5b35;
+    overflow: hidden;
+}
+
+.menu .menu-botoes {
+    display: flex;
+    justify-content: center;
+    padding: 14px 16px;
+}
+
+.menu .menu-botoes a {
+    text-decoration: none;
+}
+
+.menu .menu-botoes .button {
+    border: 1px solid #FFFF;
+    background-color: transparent;
+    height: 40px;
+    width: 160px;
+    color: #FFFF;
+    font-size: 20px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu .menu-botoes .button:hover {
+    background-color: #1d5b35;
+}
+
+.menu .titulo {
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.informacoes {
+    padding: 20px;
+    text-align: center;
+}
+/* Chat Bot */
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.plant-avatar {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.plant-avatar img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#chat-box {
+    height: 200px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+#user-input {
+    width: 70%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+/* Animação Fading */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
+/* Para Telas Menores */
+@media only screen and (max-width: 300px) {
+    .text { font-size: 11px; }
+}
+/* Texto */
+
+.text p1 {
+    border-radius: 20px;
+     border-left: 6px solid #1d5b35;;
+    color: #fff;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 50%;
+    bottom: 500px;
+    width: 30%;
+    text-align: center;
+}
+.text p2 {
+    border-radius: 20px ;
+    border-right: 6px solid #1d5b35;
+    border-left: 6px solid #1d5b35;;
+    color: #fff;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 20%;
+    bottom: 470px;
+    width: 30%;
+    text-align: center;
+}
+.text p3 {
+    border-radius:20px;
+     border-right: 6px solid #1d5b35; 
+    border-left: 6px solid #1d5b35;;
+    color: #fff;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 25%;
+    bottom: 250px;
+    width: 50%;
+    text-align: center;
+}
+.img{
+
+}
