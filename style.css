@@ -1,111 +1,205 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background-color: #d3d3d3;
-  font-family: Verdana, sans-serif;
-  color: #333;
+    background-color: #d3d3d3;
+    font-family: Verdana, sans-serif;
+    color: #333;
 }
 
 .bg {
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .menu {
-  background-color: #1d5b35;
-  width: 100%;
-  padding: 20px 0;
-  text-align: center;
+    background-color: #1d5b35;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .titulo {
-  font-size: 24px;
-  color: white;
-  margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
 }
 
 .menu-botoes {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .button {
-  border: 1px solid #FFFF;
-  background-color: transparent;
-  height: 40px;
-  width: 160px;
-  color: #FFFF;
-  font-size: 1.5em;
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.5s ease-in-out;
+    border: 1px solid #FFFF;
+    background-color: transparent;
+    height: 40px;
+    width: 160px;
+    color: #FFFF;
+    font-size: 1.5em;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
 }
 
 .button:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .informacoes h1 {
-  text-align: center;
-  padding: 20px 0;
+    text-align: center;
+    padding: 20px 0;
 }
 
 /* Slideshow */
 .slideshow-container {
-  position: relative;
-  max-width: 1000px;
-  margin: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .slideshow-container img {
-  width: 100%;
-  opacity: 0.9;
+    width: 100%;
+    opacity: 0.9;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+.planta {
+    background-color: #d3d3d3;
+    width: 200px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+
+.plant {
+    width: 200px;
+    position: absolute;
+    left: 660%;
+    top: 5%;
+}
+
+
+
+.texto h1 {
+    border-radius: 10px;
+    border-bottom: 6px solid #1d5b35;
+    position: absolute;
+    right: 75%;
+    top: 80%;
+    color: black;
+    font-size: 20px;
+
+
+    text-align: center;
+
+}
+
+.texto p1 {
+    border-radius: 10px;
+    border-right: 6px solid #1d5b35;
+    ;
+    border-left: 6px solid #1d5b35;
+    ;
+    width: 20%;
+    position: absolute;
+    right: 67%;
+    top: 90%;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.texto h2 {
+    border-radius: 10px;
+    border-bottom: 6px solid #1d5b35;
+    position: absolute;
+    right: 45%;
+    color: black;
+    font-size: 20px;
+    top: 80%;
+    text-align: center;
+
+}
+
+.texto p2 {
+    border-radius: 10px;
+    border-right: 6px solid #1d5b35;
+    border-left: 6px solid #1d5b35;
+    width: 20%;
+    position: absolute;
+    right: 40%;
+    color: black;
+    font-size: 20px;
+    top: 90%;
+    text-align: center;
+
+}
+
+.texto h3 {
+    border-radius: 10px;
+    border-bottom: 6px solid #1d5b35;
+    position: absolute;
+    right: 15%;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    top: 80%;
+}
+
+.texto p3 {
+
+    border-radius: 10px;
+    border-right: 6px solid #1d5b35;
+    border-left: 6px solid #1d5b35;
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    top: 90%;
 }
 
 .dot-container {
-  text-align: center;
-  padding: 20px 0;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
 }
 
 .active {
-  background-color: #717171;
+    background-color: #717171;
 }
 
-* { box-sizing: border-box; }
-body { font-family: Verdana, sans-serif; margin: 0; padding: 0; }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 .menu {
     background-color: #1d5b35;
@@ -152,41 +246,6 @@ body { font-family: Verdana, sans-serif; margin: 0; padding: 0; }
     text-align: center;
 }
 
-.chat-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-.plant-avatar {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.plant-avatar img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-}
-
-#chat-box {
-    height: 200px;
-    overflow-y: scroll;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-}
-
-#user-input {
-    width: 70%;
-    padding: 5px;
-    margin-right: 5px;
-}
 
 button:hover {
     background-color: #45a049;
@@ -198,7 +257,7 @@ img {
 }
 
 /* Texto */
-.text{
+.text {
     color: #fff;
     font-size: 40px;
     padding: 8px 12px;
@@ -230,11 +289,41 @@ img {
 }
 
 @keyframes fade {
-    from { opacity: .4 }
-    to { opacity: 1 }
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /* Para Telas Menores */
 @media only screen and (max-width: 300px) {
-    .text { font-size: 11px; }
+    .text {
+        font-size: 11px;
+    }
+}
+
+
+/*
+.rodape{
+    width: 100%;
+    background-color: #1d5b35;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+*/
+
+.rodape {
+    
+    position: fixed;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    background-color: #1d5b35;
+    color: white;
+    text-align: center;
 }
