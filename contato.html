@@ -32,15 +32,15 @@
    
     
    <div class="formulario">
-    <form action="/submit_form.php" method="POST">
-        <div class="form-group">
-            <label for="nome">Nome completo:</label>
-            <input type="email" id="nome" name="nome" required>
-        </div>
-
+    <form  method="POST">
         <div class="form-group">
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Nome completo:</label>
+            <input type="text" id="email" name="email" required>
         </div>
 
         <div class="form-group">
@@ -57,11 +57,15 @@
         <br>
         <br>
     
-    </form>
+    <div class="formulario">
+      <form id="meuFormulario" action="/submit_form.php" method="POST">
+        </form>
         <div class="form-group">
-            <button class="buttonf">Enviar</button>
-            <button class="buttonf">Limpar</button>
+          <button class="buttonf" type="submit">Enviar</button>
+          <button class="buttonf" type="reset">Limpar</button>
         </div>
+    </div>
+        
    </div>
     <div class="redes-sociais">
         <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
@@ -75,46 +79,13 @@
     <br>
     <br>
     <br>
+    </body>
     <script>
-        let slideIndex = 0;
-        showSlides();
+        const formulario = document.getElementById("meuFormulario");
 
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 8000); // Change image every 8 seconds
-        }
-
-        function currentSlide(n) {
-            showSlide(slideIndex = n);
-        }
-
-        function showSlide(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-        }
+        formulario.addEventListener("submit", function(event) {
+          event.preventDefault(); // Impede o envio padrão do formulário 
+             formulario.reset();
+            });
     </script>
-</body>
 </html>
