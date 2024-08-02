@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d3d3d3;
+  font-family: Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+
+}
+
+.bg {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+/* menu */
+.menu {
+  background-color: #1d5b35;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+.menu .menu-botoes a {
+  text-decoration: none;
+}
+
+.menu .menu-botoes .button {
+  border: 1px solid #FFFF;
+  background-color: transparent;
+  height: 40px;
+  width: 160px;
+  color: #FFFF;
+  font-size: 20px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.5s ease-in-out;
+  display: inline-flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu .menu-botoes .button:hover {
+  background-color: #1d5b35;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.menu .titulo {
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+
+.informacoes {
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/* textos */
+.texto{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-direction: line;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+  height: 50%;
+  text-align: left;
+}
+
+h1{
+ border-radius: 10px;
+border-bottom: 6px solid #1d5b35;
+margin-bottom: 10%;
+}
+
+p2{
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.informacoes h2 {
+  font-size: 42px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+/* Texto */
+.text {
+  color: #fff;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Para Telas Menores */
+@media only screen and (max-width: 300px) {
+  .text {
+      font-size: 11px;
+  }
+}
+
+
+/* rodape */
+
+.rodape {
+  padding: 10px;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  background-color: transparent;
+  color: #000;
+  text-align: center;
+}
+
+
+#instrucoes {
+  text-align: center; /* Centraliza o texto dentro da seção de instruções */
+  font-family: Arial, sans-serif;
+  margin-bottom: 30px;
+  line-height:1.5em;
+}
+
+#instrucoes h2 {
+  /* Estilos para o título das instruções */
+  margin-bottom: 10px;
+  font-size: 24px;  /* Aumenta o tamanho da fonte do título */
+  font-weight: bold; /* Deixa o título em negrito */
+}
+
+#instrucoes p {
+  /* Estilos para os parágrafos das instruções */
+  margin-bottom: 5px;
+  font-size: 18px;  /* Aumenta o tamanho da fonte dos parágrafos */
+  font-weight: bold; /* Deixa os parágrafos em negrito */
+}
+
+#instrucoes ul {
+  /* Estilos para as listas das instruções */
+  list-style: none;    /* Remove os marcadores padrão da lista */
+  padding: 0;           /* Remove o padding padrão da lista */
+  text-align: center;  /* Centraliza o texto das listas */
+  list-style: none; 
+}
+
+#instrucoes li {
+  /* Estilos para os itens da lista */
+  display: flex;          /* Usa flexbox para alinhar a imagem e o texto */
+  align-items: center;    /* Alinha verticalmente a imagem e o texto ao centro */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo dos itens da lista */
+  margin-bottom: 5px;      /* Adiciona um espaçamento entre os itens da lista */
+}
+
+#instrucoes li img {
+  /* Estilos para as imagens */
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Adiciona estilo para deixar os nomes dos itens em negrito */
+#instrucoes li strong {
+  font-weight: bold;
+}
+
+#gameContainer { /* Crie um container para o canvas */
+  position: relative; /* Necessário para posicionar o canvas dentro dele */
+  width: 800px; /* Largura do canvas */
+  height: 600px; /* Altura do canvas */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+#gameCanvas {
+  position: absolute; /* Posiciona o canvas dentro do container */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o canvas */
+  border: 3px, solid black;
+  border-radius:3%;
+}
+
+#gameOver, #vitoria { /* Estilos comuns para as telas de Game Over e Vitória */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  display: none; /* Esconde as mensagens inicialmente */
+}
+
+#gameOver h1, #vitoria h1 {
+  margin-bottom: 10px; 
+}
+
+#gameOver p, #vitoria p {
+  margin-bottom: 10px; /* Adiciona uma margem inferior ao parágrafo (se houver) */
+  margin-top: 15px; 
+}
+
+#gameOver button, #vitoria button {
+  margin-top: 10px; 
+}
+
+#reiniciarBtn, #reiniciarBtnVitoria{
+  border: 1px solid #FFFF;
+  background-color:#1d5b35;
+  height: 40px;
+  width: 160px;
+  color: #FFFF;
+  font-size: 20px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+#reiniciarBtn:hover #reiniciarBtnVitoria:hover{
+  transform: scale(1.05);
+}
+
+#iniciarBtn { 
+    /* Estilos para o botão de iniciar */
+    display: block; /* Garante que o botão ocupe toda a largura da linha */
+    margin: 20px auto; /* Centraliza o botão horizontalmente com margens automáticas */
+    border: 1px solid #FFFF;
+    background-color:#1d5b35;
+    height: 40px;
+    width: 160px;
+    color: #FFFF;
+    font-size: 20px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+#iniciarBtn:hover  {
+    transform: scale(1.05);
+}
+
+
