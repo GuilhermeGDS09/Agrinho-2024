@@ -139,6 +139,7 @@ img {
      border-left: 6px solid #1d5b35;
      border-right: 6px solid #1d5b35;;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
     font-size: 25px;
     padding: 8px 12px;
     position: absolute;
@@ -146,6 +147,7 @@ img {
     bottom: 50%;
     width: 30%;
     text-align: center;
+    line-height:1.2em;
 }
 .text p2 {
     
@@ -153,6 +155,7 @@ img {
      border-left: 6px solid #1d5b35;;
     border-right: 6px solid #1d5b35;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
     font-size: 25px;
     padding: 8px 12px;
     position: absolute;
@@ -160,12 +163,14 @@ img {
     bottom: 50%;
     width: 30%;
     text-align: center;
+    line-height:1.2em;
 }
 .text p3 {
     border-radius:20px;
-     border-right: 6px solid #1d5b35; 
+    border-right: 6px solid #1d5b35; 
     border-left: 6px solid #1d5b35;;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
     font-size: 25px;
     padding: 8px 12px;
     position: absolute;
@@ -173,6 +178,7 @@ img {
     bottom: 20%;
     width: 50%;
     text-align: center;
+    line-height:1.2em;
 }
 
 .rodape{
