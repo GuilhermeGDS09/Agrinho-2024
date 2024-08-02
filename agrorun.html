@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AgroRun.css">
+    <title>Agrinho - Projeto Educacional</title>
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="menu-botoes">
+            <a href="index.html"><button class="button"><span> Inicio </span></button></a>
+            <a href="sobre.html"><button class="button"><span> Sobre </span></button></a>
+            <a href="AgroRun.html"><button class="button"><span> AgroRun </span></button></a>
+            <a href="contato.html"><button class="button"><span> Contato </span></button></a>
+        </div>
+
+        <div class="titulo">
+            <p2><b>Agrinho, colhendo oportunidades do campo à cidade</b><p2>
+
+        </div>
+    </div>
+
+
+    <div class="informacoes">
+        <br>
+        <br>
+        <h2>Conheça Nosso Jogo: AgroRun</h2>
+    </div>
+    
+    </div>
+    
+    <div id="instrucoes">
+      <h2>Como Jogar:</h2>
+      <p>--> Use as setas do teclado para mover o fazendeiro</p>
+      <p style="color:green;">--> Colete os itens positivos para ganhar pontos:</p>
+      <ul>
+        <li><img src="imagens AgroRun/adubo.png" alt="Adubo"> <strong>Adubo</strong>: +1 ponto</li>
+        <li><img src="imagens AgroRun/drone.png" alt="Drone"> <strong>Drone</strong>: +3 pontos</li>
+        <li><img src="imagens AgroRun/semente.png" alt="Semente Dourada"> <strong>Semente Dourada</strong>: +5 pontos</li>
+      </ul>
+      <p style="color:red;">--> Evite os itens negativos para não perder vidas:</p>
+      <ul>
+        <li><img src="imagens AgroRun/gafanhoto.png" alt="Gafanhoto"> <strong>Gafanhoto</strong>: -1 vida</li>
+        <li><img src="imagens AgroRun/erva.png" alt="Erva Daninha"> <strong>Erva Daninha</strong>: -1 vidas</li>
+      </ul>
+      <p style="font-size: 20px;"> --> Para vencer alcance 50 pontos! <-- </p>
+    </div>
+
+    <div id="gameContainer">
+        <canvas class="canvasjogo"id="gameCanvas"></canvas>
+    </div>
+
+        <button id="iniciarBtn">Iniciar Jogo</button>
+
+        <div id="gameOver" style="display: none;">
+          <h3>Game Over!</h3>
+          <button class="gamebtn"id="reiniciarBtn">Outra vez</button>
+        </div>
+
+        <div id="vitoria" style="display: none;"> 
+          <h3>Parabéns!</h3>
+          <p>Você venceu!</p>
+          <button class="gamebtn"id="reiniciarBtnVitoria">OK!</button>
+        </div>
+
+
+
+    <footer class="rodape">
+          <p>&copy; Direitos reservados Agrinho 2024</p>
+      </footer>
+    
+     <script src="agrorun.js"></script>
+<br>
+<br>
+    
+</body>
+    <footer class="rodape">
+          <p>&copy; Direitos reservados Agrinho 2024</p>
+      </footer>
+</html>
+   
+
